@@ -18,6 +18,7 @@
       </div>
       <div class="t100-list">
         <?php
+        
           while($setlist = $red_list->fetch_assoc()){
             echo '<div class="t100-item">
               <div class="number">' . $setlist['number'] . '</div>

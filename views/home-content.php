@@ -1,8 +1,6 @@
 <div class="left-content">
   <div class="header-body">
     <p><?php
-    //$page = isset($_GET['page']) ? $_GET['page'] : date('j');
-
     $getDate = date('j') - $page;
     switch ($getDate) {
       case 0:
@@ -22,6 +20,7 @@
       }
     }
      ?>in de Radio 1 Tour Top 100</p>
+
   </div>
   <div class="content">
     <div class="song-list">
@@ -59,7 +58,6 @@
             echo '</div>';
             echo '</div>';
           echo '</div>';
-
       }
       ?>
     </div>

@@ -1,6 +1,5 @@
 <?php
 
-//$song_id = $_GET['song_id'];
 $song_id = isset($_GET['song_id']) ? $_GET['song_id'] : 100;
 
 if(date('j')<21){
@@ -9,7 +8,6 @@ $limitSinglePage = 100-(date('j')-2) *5-4;
 if ($song_id < $limitSinglePage) {
   $song_id = $limitSinglePage;
 }
-
 
 if($song_id == 1){
   $offset = 1;
@@ -25,7 +23,6 @@ else{
 }
 
 $id_number = $song_id-$offset;
-
 
 $query = "SELECT * from videodata ORDER BY number LIMIT ".$id_number.",".$nr;
 

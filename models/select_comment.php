@@ -4,8 +4,6 @@ if(isset($_GET['comment_page'])){
 }else{
   $comment_page = 1;
 }
-//$song_id = $_GET['song_id'];
-
 
 $nr_comments_per_page = 2;
 $offset = ($comment_page-1) *$nr_comments_per_page;

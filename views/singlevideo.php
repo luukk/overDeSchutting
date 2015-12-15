@@ -15,14 +15,11 @@
         <div class="number">'. $b['number'] . '</div>
         <div class="song-id"><a href=?action=detail'."&amp;".'song_id='.$b['number'].'>'. $b['artist'] . ' : ' . $b['title'] . '</a></div>
       </div>';
-
       $b = $video->fetch_assoc();
       echo '<div class="in-today">
         <div class="number">'. $b['number'] . '</div>
         <div class="song-id">'. $b['artist'] . ' : ' . $b['title'] . '</div>
       </div>';
-
-
       echo '<div class="in-next">
       </div>';
     echo '</div>';
@@ -30,7 +27,6 @@
     echo '<div class="video-container">
       <iframe class="iframe" src="https://www.youtube.com/embed/FrG4TEcSuRg" frameborder="0" allowfullscreen></iframe>
     </div>';
-
     echo '<div class="in-description">' .
       $b['text'] .
     '</div>';
@@ -41,7 +37,6 @@
         <li><img src="./img/svg/envelope.svg" alt="envelope"></li>
       </ul>
     </div>';
-
   }elseif($song_id == 1){
     $b = $video->fetch_assoc();
     echo '<div class="song-pagination">';
@@ -74,10 +69,7 @@
         <li><img src="./img/svg/envelope.svg" alt="envelope"></li>
       </ul>
     </div>';
-
-
   }else{
-
   $b = $video->fetch_assoc();
   echo '<div class="song-pagination">';
     echo '<div class="in-previous">
@@ -114,7 +106,6 @@
   </div>';
   }
   ?>
-
 </div>
   <!-- end navigation -->
   <div class="header-body">
@@ -166,13 +157,11 @@
         $i = 1;
       }
       for($i; $i<=$total_pages;$i++){
-
        if(isset($_GET['comment_page']) && $i == $_GET['comment_page']){
            $active = 'id="comment-active"';
        }else{
          $active = 'class="comment-disabled"';
        }
-
         echo '<div '.$active.'><a href=?action=detail&song_id='.$song_id.'&comment_page='.$i.'>'.$i.'</a></div>';
       }
       echo '</nav>';
