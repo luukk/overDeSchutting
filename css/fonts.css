@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Bubbledot';
+    src: url('../fonts/bubbledot-webfont.eot');
+    src: url('../fonts/bubbledot-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bubbledot-webfont.woff2') format('woff2'),
+         url('../fonts/bubbledot-webfont.woff') format('woff'),
+         url('../fonts/bubbledot-webfont.ttf') format('truetype'),
+         url('../fonts/bubbledot-webfont.svg#bubbledot_icg_fine_posregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
