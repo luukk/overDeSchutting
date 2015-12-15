@@ -4,8 +4,8 @@
       <p>Complete tour top</p>
       <div class="t100-logo">
         <span class="number">1</span>
-        <span>2</span>
-        <span class="number">3</span>
+        <span class="number-G">0</span>
+        <span class="number">0</span>
       </div>
     </div>
   </div>

@@ -306,7 +306,7 @@ body, html {
       .song-list-item .read-more ul a, .song-list-item a ul a, .bner-list-item .read-more ul a, .bner-list-item a ul a {
         text-decoration: none; }
       .song-list-item .read-more ul img, .song-list-item a ul img, .bner-list-item .read-more ul img, .bner-list-item a ul img {
-        width: 22px;
+        width: 20px;
         vertical-align: bottom; }
 
 .media ul {
@@ -471,22 +471,31 @@ body, html {
   position: relative; }
   .header-body .t100-title .t100-logo {
     top: 0;
-    width: 200px;
-    position: absolute;
-    text-align: right; }
+    margin-left: 10em;
+    position: absolute; }
     .header-body .t100-title .t100-logo .number {
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      width: 46px;
-      padding: 7px 4px 5px 4px;
       background-color: #FF0000;
       text-align: center;
       color: #FFF;
-      font-size: 24px;
-      height: 34px;
+      padding: 8px 16px 8px 16px;
+      font-size: 18px;
       font-weight: bold;
       text-align: center; }
+      .header-body .t100-title .t100-logo .number:first-child {
+        margin-right: -5px; }
+      .header-body .t100-title .t100-logo .number:last-child {
+        top: -6px;
+        margin-left: 42px; }
+    .header-body .t100-title .t100-logo .number-G {
+      background-color: #444;
+      text-align: center;
+      color: #FFF;
+      padding: 8px 16px 8px 16px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      top: -2px;
+      position: absolute; }
 
 #tour-pdf {
   height: 44px;
